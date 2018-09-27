@@ -1,5 +1,5 @@
 {
-    "name": "moment/moment",
+    "name": "romaten1/moment",
     "description": "Parse, validate, manipulate, and display dates in JavaScript.",
     "keywords": [
         "moment",
@@ -12,7 +12,7 @@
         "l10n",
         "ender"
     ],
-    "homepage": "https://github.com/moment/moment",
+    "homepage": "https://github.com/romaten1/moment",
     "authors": [{"name": "Tim Wood", "email": "washwithcare@gmail.com"}],
     "license": "MIT",
     "type": "component",
