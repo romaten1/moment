@@ -18,6 +18,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD-MM-YYYY',
+            LS : 'DD-MM-YY',
             LL : 'YYYY [ҫулхи] MMMM [уйӑхӗн] D[-мӗшӗ]',
             LLL : 'YYYY [ҫулхи] MMMM [уйӑхӗн] D[-мӗшӗ], HH:mm',
             LLLL : 'dddd, YYYY [ҫулхи] MMMM [уйӑхӗн] D[-мӗшӗ], HH:mm'

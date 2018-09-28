@@ -55,6 +55,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD.MM.YYYY.',
+            LS : 'DD.MM.YY.',
             LL : 'YYYY. [gada] D. MMMM',
             LLL : 'YYYY. [gada] D. MMMM, HH:mm',
             LLLL : 'YYYY. [gada] D. MMMM, dddd, HH:mm'

@@ -41,6 +41,7 @@ export default moment.defineLocale('ne', {
         LT : 'Aको h:mm बजे',
         LTS : 'Aको h:mm:ss बजे',
         L : 'DD/MM/YYYY',
+        LS : 'DD/MM/YY',
         LL : 'D MMMM YYYY',
         LLL : 'D MMMM YYYY, Aको h:mm बजे',
         LLLL : 'dddd, D MMMM YYYY, Aको h:mm बजे'

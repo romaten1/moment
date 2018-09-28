@@ -38,6 +38,7 @@
             LT : 'A h:mm [vazta]',
             LTS : 'A h:mm:ss [vazta]',
             L : 'DD-MM-YYYY',
+            LS : 'DD-MM-YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY A h:mm [vazta]',
             LLLL : 'dddd, MMMM[achea] Do, YYYY, A h:mm [vazta]',

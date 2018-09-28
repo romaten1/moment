@@ -543,7 +543,7 @@
 
     var formattingTokens = /(\[[^\[]*\])|(\\)?([Hh]mm(ss)?|Mo|MM?M?M?|Do|DDDo|DD?D?D?|ddd?d?|do?|w[o|w]?|W[o|W]?|Qo?|YYYYYY|YYYYY|YYYY|YY|gg(ggg?)?|GG(GGG?)?|e|E|a|A|hh?|HH?|kk?|mm?|ss?|S{1,9}|x|X|zz?|ZZ?|.)/g;
 
-    var localFormattingTokens = /(\[[^\[]*\])|(\\)?(LTS|LT|LL?L?L?|l{1,4})/g;
+    var localFormattingTokens = /(\[[^\[]*\])|(\\)?(LS|LTS|LT|LL?L?L?|l{1,4})/g;
 
     var formatFunctions = {};
 
@@ -4523,6 +4523,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd, D MMMM YYYY HH:mm'
@@ -4574,6 +4575,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd D MMMM YYYY HH:mm'
@@ -4621,6 +4623,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd D MMMM YYYY HH:mm'
@@ -4712,6 +4715,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'D/\u200FM/\u200FYYYY',
+            LS : 'D/\u200FM/\u200FYY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd D MMMM YYYY HH:mm'
@@ -4778,6 +4782,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd D MMMM YYYY HH:mm'
@@ -4849,6 +4854,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd D MMMM YYYY HH:mm'
@@ -4917,6 +4923,7 @@
             LT: 'HH:mm',
             LTS: 'HH:mm:ss',
             L: 'DD/MM/YYYY',
+            LS: 'DD/MM/YY',
             LL: 'D MMMM YYYY',
             LLL: 'D MMMM YYYY HH:mm',
             LLLL: 'dddd D MMMM YYYY HH:mm'
@@ -5019,6 +5026,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'D/\u200FM/\u200FYYYY',
+            LS : 'D/\u200FM/\u200FYY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd D MMMM YYYY HH:mm'
@@ -5108,6 +5116,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd, D MMMM YYYY HH:mm'
@@ -5210,6 +5219,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D MMMM YYYY г.',
             LLL : 'D MMMM YYYY г., HH:mm',
             LLLL : 'dddd, D MMMM YYYY г., HH:mm'
@@ -5299,6 +5309,7 @@
             LT : 'H:mm',
             LTS : 'H:mm:ss',
             L : 'D.MM.YYYY',
+            LS : 'D.MM.YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY H:mm',
             LLLL : 'dddd, D MMMM YYYY H:mm'
@@ -5377,6 +5388,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'MMMM [tile] D [san] YYYY',
             LLL : 'MMMM [tile] D [san] YYYY [lɛrɛ] HH:mm',
             LLLL : 'dddd MMMM [tile] D [san] YYYY [lɛrɛ] HH:mm'
@@ -5448,6 +5460,7 @@
             LT : 'A h:mm সময়',
             LTS : 'A h:mm:ss সময়',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY, A h:mm সময়',
             LLLL : 'dddd, D MMMM YYYY, A h:mm সময়'
@@ -5555,6 +5568,7 @@
             LT : 'A h:mm',
             LTS : 'A h:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY, A h:mm',
             LLLL : 'dddd, D MMMM YYYY, A h:mm'
@@ -5682,6 +5696,7 @@
             LT : 'h[e]mm A',
             LTS : 'h[e]mm:ss A',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D [a viz] MMMM YYYY',
             LLL : 'D [a viz] MMMM YYYY h[e]mm A',
             LLLL : 'dddd, D [a viz] MMMM YYYY h[e]mm A'
@@ -5797,6 +5812,7 @@
             LT : 'H:mm',
             LTS : 'H:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D. MMMM YYYY',
             LLL : 'D. MMMM YYYY H:mm',
             LLLL : 'dddd, D. MMMM YYYY H:mm'
@@ -5878,6 +5894,7 @@
             LT : 'H:mm',
             LTS : 'H:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM [de] YYYY',
             ll : 'D MMM YYYY',
             LLL : 'D MMMM [de] YYYY [a les] H:mm',
@@ -6035,6 +6052,7 @@
             LT: 'H:mm',
             LTS : 'H:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D. MMMM YYYY',
             LLL : 'D. MMMM YYYY H:mm',
             LLLL : 'dddd D. MMMM YYYY H:mm',
@@ -6115,6 +6133,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD-MM-YYYY',
+            LS : 'DD-MM-YY',
             LL : 'YYYY [ҫулхи] MMMM [уйӑхӗн] D[-мӗшӗ]',
             LLL : 'YYYY [ҫулхи] MMMM [уйӑхӗн] D[-мӗшӗ], HH:mm',
             LLLL : 'dddd, YYYY [ҫулхи] MMMM [уйӑхӗн] D[-мӗшӗ], HH:mm'
@@ -6168,6 +6187,7 @@
             LT: 'HH:mm',
             LTS : 'HH:mm:ss',
             L: 'DD/MM/YYYY',
+            LS: 'DD/MM/YY',
             LL: 'D MMMM YYYY',
             LLL: 'D MMMM YYYY HH:mm',
             LLLL: 'dddd, D MMMM YYYY HH:mm'
@@ -6234,6 +6254,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D. MMMM YYYY',
             LLL : 'D. MMMM YYYY HH:mm',
             LLLL : 'dddd [d.] D. MMMM YYYY [kl.] HH:mm'
@@ -6298,6 +6319,7 @@
             LT: 'HH:mm',
             LTS: 'HH:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D. MMMM YYYY',
             LLL : 'D. MMMM YYYY HH:mm',
             LLLL : 'dddd, D. MMMM YYYY HH:mm'
@@ -6362,6 +6384,7 @@
             LT: 'HH:mm',
             LTS: 'HH:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D. MMMM YYYY',
             LLL : 'D. MMMM YYYY HH:mm',
             LLLL : 'dddd, D. MMMM YYYY HH:mm'
@@ -6426,6 +6449,7 @@
             LT: 'HH:mm',
             LTS: 'HH:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D. MMMM YYYY',
             LLL : 'D. MMMM YYYY HH:mm',
             LLLL : 'dddd, D. MMMM YYYY HH:mm'
@@ -6498,6 +6522,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'D/M/YYYY',
+            LS : 'D/M/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd D MMMM YYYY HH:mm'
@@ -6582,6 +6607,7 @@
             LT : 'h:mm A',
             LTS : 'h:mm:ss A',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY h:mm A',
             LLLL : 'dddd, D MMMM YYYY h:mm A'
@@ -6645,6 +6671,7 @@
             LT : 'h:mm A',
             LTS : 'h:mm:ss A',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY h:mm A',
             LLLL : 'dddd, D MMMM YYYY h:mm A'
@@ -6700,6 +6727,7 @@
             LT : 'h:mm A',
             LTS : 'h:mm:ss A',
             L : 'YYYY-MM-DD',
+            LS : 'YY-MM-DD',
             LL : 'MMMM D, YYYY',
             LLL : 'MMMM D, YYYY h:mm A',
             LLLL : 'dddd, MMMM D, YYYY h:mm A'
@@ -6751,6 +6779,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd, D MMMM YYYY HH:mm'
@@ -6806,6 +6835,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD-MM-YYYY',
+            LS : 'DD-MM-YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd D MMMM YYYY HH:mm'
@@ -6861,6 +6891,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd, D MMMM YYYY HH:mm'
@@ -6911,6 +6942,7 @@
             LT : 'h:mm A',
             LTS : 'h:mm:ss A',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY h:mm A',
             LLLL : 'dddd, D MMMM YYYY h:mm A'
@@ -6966,6 +6998,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'YYYY-MM-DD',
+            LS : 'YY-MM-DD',
             LL : 'D[-a de] MMMM, YYYY',
             LLL : 'D[-a de] MMMM, YYYY HH:mm',
             LLLL : 'dddd, [la] D[-a de] MMMM, YYYY HH:mm'
@@ -7047,6 +7080,7 @@
             LT : 'h:mm A',
             LTS : 'h:mm:ss A',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D [de] MMMM [de] YYYY',
             LLL : 'D [de] MMMM [de] YYYY h:mm A',
             LLLL : 'dddd, D [de] MMMM [de] YYYY h:mm A'
@@ -7118,6 +7152,7 @@
             LT : 'h:mm A',
             LTS : 'h:mm:ss A',
             L : 'MM/DD/YYYY',
+            LS : 'MM/DD/YY',
             LL : 'MMMM [de] D [de] YYYY',
             LLL : 'MMMM [de] D [de] YYYY h:mm A',
             LLLL : 'dddd, MMMM [de] D [de] YYYY h:mm A'
@@ -7198,6 +7233,7 @@
             LT : 'H:mm',
             LTS : 'H:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D [de] MMMM [de] YYYY',
             LLL : 'D [de] MMMM [de] YYYY H:mm',
             LLLL : 'dddd, D [de] MMMM [de] YYYY H:mm'
@@ -7276,6 +7312,7 @@
             LT   : 'H:mm',
             LTS : 'H:mm:ss',
             L    : 'DD.MM.YYYY',
+            LS    : 'DD.MM.YY',
             LL   : 'D. MMMM YYYY',
             LLL  : 'D. MMMM YYYY H:mm',
             LLLL : 'dddd, D. MMMM YYYY H:mm'
@@ -7326,6 +7363,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'YYYY-MM-DD',
+            LS : 'YY-MM-DD',
             LL : 'YYYY[ko] MMMM[ren] D[a]',
             LLL : 'YYYY[ko] MMMM[ren] D[a] HH:mm',
             LLLL : 'dddd, YYYY[ko] MMMM[ren] D[a] HH:mm',
@@ -7403,6 +7441,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd, D MMMM YYYY HH:mm'
@@ -7517,6 +7556,7 @@
             LT : 'HH.mm',
             LTS : 'HH.mm.ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'Do MMMM[ta] YYYY',
             LLL : 'Do MMMM[ta] YYYY, [klo] HH.mm',
             LLLL : 'dddd, Do MMMM[ta] YYYY, [klo] HH.mm',
@@ -7569,6 +7609,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd D. MMMM, YYYY HH:mm'
@@ -7619,6 +7660,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'YYYY-MM-DD',
+            LS : 'YY-MM-DD',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd D MMMM YYYY HH:mm'
@@ -7681,6 +7723,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd D MMMM YYYY HH:mm'
@@ -7747,6 +7790,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd D MMMM YYYY HH:mm'
@@ -7829,6 +7873,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD-MM-YYYY',
+            LS : 'DD-MM-YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd D MMMM YYYY HH:mm'
@@ -7892,6 +7937,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd, D MMMM YYYY HH:mm'
@@ -7945,6 +7991,7 @@
             LT : 'H:mm',
             LTS : 'H:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D [de] MMMM [de] YYYY',
             LLL : 'D [de] MMMM [de] YYYY H:mm',
             LLLL : 'dddd, D [de] MMMM [de] YYYY H:mm'
@@ -8028,6 +8075,7 @@
             LT : 'A h:mm [vazta]',
             LTS : 'A h:mm:ss [vazta]',
             L : 'DD-MM-YYYY',
+            LS : 'DD-MM-YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY A h:mm [vazta]',
             LLLL : 'dddd, MMMM[achea] Do, YYYY, A h:mm [vazta]',
@@ -8145,6 +8193,7 @@
             LT: 'A h:mm વાગ્યે',
             LTS: 'A h:mm:ss વાગ્યે',
             L: 'DD/MM/YYYY',
+            LS: 'DD/MM/YY',
             LL: 'D MMMM YYYY',
             LLL: 'D MMMM YYYY, A h:mm વાગ્યે',
             LLLL: 'dddd, D MMMM YYYY, A h:mm વાગ્યે'
@@ -8231,6 +8280,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D [ב]MMMM YYYY',
             LLL : 'D [ב]MMMM YYYY HH:mm',
             LLLL : 'dddd, D [ב]MMMM YYYY HH:mm',
@@ -8342,6 +8392,7 @@
             LT : 'A h:mm बजे',
             LTS : 'A h:mm:ss बजे',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY, A h:mm बजे',
             LLLL : 'dddd, D MMMM YYYY, A h:mm बजे'
@@ -8495,6 +8546,7 @@
             LT : 'H:mm',
             LTS : 'H:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D. MMMM YYYY',
             LLL : 'D. MMMM YYYY H:mm',
             LLLL : 'dddd, D. MMMM YYYY H:mm'
@@ -8605,6 +8657,7 @@
             LT : 'H:mm',
             LTS : 'H:mm:ss',
             L : 'YYYY.MM.DD.',
+            LS : 'YY.MM.DD.',
             LL : 'YYYY. MMMM D.',
             LLL : 'YYYY. MMMM D. H:mm',
             LLLL : 'YYYY. MMMM D., dddd H:mm'
@@ -8671,6 +8724,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D MMMM YYYY թ.',
             LLL : 'D MMMM YYYY թ., HH:mm',
             LLLL : 'dddd, D MMMM YYYY թ., HH:mm'
@@ -8751,6 +8805,7 @@
             LT : 'HH.mm',
             LTS : 'HH.mm.ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY [pukul] HH.mm',
             LLLL : 'dddd, D MMMM YYYY [pukul] HH.mm'
@@ -8893,6 +8948,7 @@
             LT : 'H:mm',
             LTS : 'H:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D. MMMM YYYY',
             LLL : 'D. MMMM YYYY [kl.] H:mm',
             LLLL : 'dddd, D. MMMM YYYY [kl.] H:mm'
@@ -8941,6 +8997,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd D MMMM YYYY HH:mm'
@@ -8998,6 +9055,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'YYYY/MM/DD',
+            LS : 'YY/MM/DD',
             LL : 'YYYY年M月D日',
             LLL : 'YYYY年M月D日 HH:mm',
             LLLL : 'YYYY年M月D日 dddd HH:mm',
@@ -9078,6 +9136,7 @@
             LT : 'HH.mm',
             LTS : 'HH.mm.ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY [pukul] HH.mm',
             LLLL : 'dddd, D MMMM YYYY [pukul] HH.mm'
@@ -9155,6 +9214,7 @@
             LT : 'h:mm A',
             LTS : 'h:mm:ss A',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY h:mm A',
             LLLL : 'dddd, D MMMM YYYY h:mm A'
@@ -9248,6 +9308,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd, D MMMM YYYY HH:mm'
@@ -9329,6 +9390,7 @@
             LT: 'HH:mm',
             LTS: 'HH:mm:ss',
             L: 'DD/MM/YYYY',
+            LS: 'DD/MM/YY',
             LL: 'D MMMM YYYY',
             LLL: 'D MMMM YYYY HH:mm',
             LLLL: 'dddd, D MMMM YYYY HH:mm'
@@ -9424,6 +9486,7 @@
             LT : 'A h:mm',
             LTS : 'A h:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY, A h:mm',
             LLLL : 'dddd, D MMMM YYYY, A h:mm'
@@ -9512,6 +9575,7 @@
             LT : 'A h:mm',
             LTS : 'A h:mm:ss',
             L : 'YYYY.MM.DD.',
+            LS : 'YY.MM.DD.',
             LL : 'YYYY년 MMMM D일',
             LLL : 'YYYY년 MMMM D일 A h:mm',
             LLLL : 'YYYY년 MMMM D일 dddd A h:mm',
@@ -9604,6 +9668,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd, D MMMM YYYY HH:mm'
@@ -9723,6 +9788,7 @@
             LT: 'H:mm [Auer]',
             LTS: 'H:mm:ss [Auer]',
             L: 'DD.MM.YYYY',
+            LS: 'DD.MM.YY',
             LL: 'D. MMMM YYYY',
             LLL: 'D. MMMM YYYY H:mm [Auer]',
             LLLL: 'dddd, D. MMMM YYYY H:mm [Auer]'
@@ -9781,6 +9847,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'ວັນdddd D MMMM YYYY HH:mm'
@@ -9890,6 +9957,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'YYYY-MM-DD',
+            LS : 'YY-MM-DD',
             LL : 'YYYY [m.] MMMM D [d.]',
             LLL : 'YYYY [m.] MMMM D [d.], HH:mm [val.]',
             LLLL : 'YYYY [m.] MMMM D [d.], dddd, HH:mm [val.]',
@@ -9981,6 +10049,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD.MM.YYYY.',
+            LS : 'DD.MM.YY.',
             LL : 'YYYY. [gada] D. MMMM',
             LLL : 'YYYY. [gada] D. MMMM, HH:mm',
             LLLL : 'YYYY. [gada] D. MMMM, dddd, HH:mm'
@@ -10055,6 +10124,7 @@
             LT: 'H:mm',
             LTS : 'H:mm:ss',
             L: 'DD.MM.YYYY',
+            LS: 'DD.MM.YY',
             LL: 'D. MMMM YYYY',
             LLL: 'D. MMMM YYYY H:mm',
             LLLL: 'dddd, D. MMMM YYYY H:mm'
@@ -10133,6 +10203,7 @@
             LT: 'HH:mm',
             LTS: 'HH:mm:ss',
             L: 'DD/MM/YYYY',
+            LS: 'DD/MM/YY',
             LL: 'D MMMM YYYY',
             LLL: 'D MMMM YYYY [i] HH:mm',
             LLLL: 'dddd, D MMMM YYYY [i] HH:mm'
@@ -10181,6 +10252,7 @@
             LT : 'H:mm',
             LTS : 'H:mm:ss',
             L : 'D.MM.YYYY',
+            LS : 'D.MM.YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY H:mm',
             LLLL : 'dddd, D MMMM YYYY H:mm'
@@ -10260,6 +10332,7 @@
             LT : 'A h:mm -നു',
             LTS : 'A h:mm:ss -നു',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY, A h:mm -നു',
             LLLL : 'dddd, D MMMM YYYY, A h:mm -നു'
@@ -10356,6 +10429,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'YYYY-MM-DD',
+            LS : 'YY-MM-DD',
             LL : 'YYYY оны MMMMын D',
             LLL : 'YYYY оны MMMMын D HH:mm',
             LLLL : 'dddd, YYYY оны MMMMын D HH:mm'
@@ -10484,6 +10558,7 @@
             LT : 'A h:mm वाजता',
             LTS : 'A h:mm:ss वाजता',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY, A h:mm वाजता',
             LLLL : 'dddd, D MMMM YYYY, A h:mm वाजता'
@@ -10568,6 +10643,7 @@
             LT : 'HH.mm',
             LTS : 'HH.mm.ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY [pukul] HH.mm',
             LLLL : 'dddd, D MMMM YYYY [pukul] HH.mm'
@@ -10638,6 +10714,7 @@
             LT : 'HH.mm',
             LTS : 'HH.mm.ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY [pukul] HH.mm',
             LLLL : 'dddd, D MMMM YYYY [pukul] HH.mm'
@@ -10708,6 +10785,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd, D MMMM YYYY HH:mm'
@@ -10781,6 +10859,7 @@
             LT: 'HH:mm',
             LTS: 'HH:mm:ss',
             L: 'DD/MM/YYYY',
+            LS: 'DD/MM/YY',
             LL: 'D MMMM YYYY',
             LLL: 'D MMMM YYYY HH:mm',
             LLLL: 'dddd D MMMM YYYY HH:mm'
@@ -10839,6 +10918,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D. MMMM YYYY',
             LLL : 'D. MMMM YYYY [kl.] HH:mm',
             LLLL : 'dddd D. MMMM YYYY [kl.] HH:mm'
@@ -10914,6 +10994,7 @@
             LT : 'Aको h:mm बजे',
             LTS : 'Aको h:mm:ss बजे',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY, Aको h:mm बजे',
             LLLL : 'dddd, D MMMM YYYY, Aको h:mm बजे'
@@ -11023,6 +11104,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd D MMMM YYYY HH:mm'
@@ -11098,6 +11180,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD-MM-YYYY',
+            LS : 'DD-MM-YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd D MMMM YYYY HH:mm'
@@ -11148,6 +11231,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D. MMMM YYYY',
             LLL : 'D. MMMM YYYY [kl.] H:mm',
             LLLL : 'dddd D. MMMM YYYY [kl.] HH:mm'
@@ -11222,6 +11306,7 @@
             LT : 'A h:mm ਵਜੇ',
             LTS : 'A h:mm:ss ਵਜੇ',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY, A h:mm ਵਜੇ',
             LLLL : 'dddd, D MMMM YYYY, A h:mm ਵਜੇ'
@@ -11346,6 +11431,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd, D MMMM YYYY HH:mm'
@@ -11423,6 +11509,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D [de] MMMM [de] YYYY',
             LLL : 'D [de] MMMM [de] YYYY [às] HH:mm',
             LLLL : 'dddd, D [de] MMMM [de] YYYY [às] HH:mm'
@@ -11472,6 +11559,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D [de] MMMM [de] YYYY',
             LLL : 'D [de] MMMM [de] YYYY HH:mm',
             LLLL : 'dddd, D [de] MMMM [de] YYYY HH:mm'
@@ -11541,6 +11629,7 @@
             LT : 'H:mm',
             LTS : 'H:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY H:mm',
             LLLL : 'dddd, D MMMM YYYY H:mm'
@@ -11638,6 +11727,7 @@
             LT : 'H:mm',
             LTS : 'H:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D MMMM YYYY г.',
             LLL : 'D MMMM YYYY г., H:mm',
             LLLL : 'dddd, D MMMM YYYY г., H:mm'
@@ -11781,6 +11871,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd، D MMMM YYYY HH:mm'
@@ -11843,6 +11934,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'MMMM D. [b.] YYYY',
             LLL : 'MMMM D. [b.] YYYY [ti.] HH:mm',
             LLLL : 'dddd, MMMM D. [b.] YYYY [ti.] HH:mm'
@@ -11893,6 +11985,7 @@
             LT : 'a h:mm',
             LTS : 'a h:mm:ss',
             L : 'YYYY/MM/DD',
+            LS : 'YY/MM/DD',
             LL : 'YYYY MMMM D',
             LLL : 'YYYY MMMM D, a h:mm',
             LLLL : 'YYYY MMMM D [වැනි] dddd, a h:mm:ss'
@@ -12015,6 +12108,7 @@
             LT: 'H:mm',
             LTS : 'H:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D. MMMM YYYY',
             LLL : 'D. MMMM YYYY H:mm',
             LLLL : 'dddd D. MMMM YYYY H:mm'
@@ -12178,6 +12272,7 @@
             LT : 'H:mm',
             LTS : 'H:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D. MMMM YYYY',
             LLL : 'D. MMMM YYYY H:mm',
             LLLL : 'dddd, D. MMMM YYYY H:mm'
@@ -12263,6 +12358,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd, D MMMM YYYY HH:mm'
@@ -12337,6 +12433,7 @@
             LT: 'H:mm',
             LTS : 'H:mm:ss',
             L: 'DD.MM.YYYY',
+            LS: 'DD.MM.YY',
             LL: 'D. MMMM YYYY',
             LLL: 'D. MMMM YYYY H:mm',
             LLLL: 'dddd, D. MMMM YYYY H:mm'
@@ -12436,6 +12533,7 @@
             LT: 'H:mm',
             LTS : 'H:mm:ss',
             L: 'DD.MM.YYYY',
+            LS: 'DD.MM.YY',
             LL: 'D. MMMM YYYY',
             LLL: 'D. MMMM YYYY H:mm',
             LLLL: 'dddd, D. MMMM YYYY H:mm'
@@ -12510,6 +12608,7 @@
             LT : 'h:mm A',
             LTS : 'h:mm:ss A',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY h:mm A',
             LLLL : 'dddd, D MMMM YYYY h:mm A'
@@ -12585,6 +12684,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'YYYY-MM-DD',
+            LS : 'YY-MM-DD',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY [kl.] HH:mm',
             LLLL : 'dddd D MMMM YYYY [kl.] HH:mm',
@@ -12643,6 +12743,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd, D MMMM YYYY HH:mm'
@@ -12713,6 +12814,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY, HH:mm',
             LLLL : 'dddd, D MMMM YYYY, HH:mm'
@@ -12807,6 +12909,7 @@
             LT : 'A h:mm',
             LTS : 'A h:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY, A h:mm',
             LLLL : 'dddd, D MMMM YYYY, A h:mm'
@@ -12883,6 +12986,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd, D MMMM YYYY HH:mm'
@@ -12963,6 +13067,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd, D MMMM YYYY HH:mm'
@@ -13044,6 +13149,7 @@
             LT : 'H:mm',
             LTS : 'H:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY เวลา H:mm',
             LLLL : 'วันddddที่ D MMMM YYYY เวลา H:mm'
@@ -13097,6 +13203,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'MM/D/YYYY',
+            LS : 'MM/D/YY',
             LL : 'MMMM D, YYYY',
             LLL : 'MMMM D, YYYY HH:mm',
             LLLL : 'dddd, MMMM DD, YYYY HH:mm'
@@ -13209,6 +13316,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd, D MMMM YYYY HH:mm'
@@ -13276,6 +13384,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd, D MMMM YYYY HH:mm'
@@ -13341,6 +13450,7 @@
             LT : 'HH.mm',
             LTS : 'HH.mm.ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D. MMMM [dallas] YYYY',
             LLL : 'D. MMMM [dallas] YYYY HH.mm',
             LLLL : 'dddd, [li] D. MMMM [dallas] YYYY HH.mm'
@@ -13418,6 +13528,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd D MMMM YYYY HH:mm'
@@ -13464,6 +13575,7 @@
             LT : 'HH:mm',
             LTS: 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd D MMMM YYYY HH:mm'
@@ -13516,6 +13628,7 @@
             LT: 'HH:mm',
             LTS: 'HH:mm:ss',
             L: 'YYYY-MM-DD',
+            LS: 'YY-MM-DD',
             LL: 'YYYY-يىلىM-ئاينىڭD-كۈنى',
             LLL: 'YYYY-يىلىM-ئاينىڭD-كۈنى، HH:mm',
             LLLL: 'dddd، YYYY-يىلىM-ئاينىڭD-كۈنى، HH:mm'
@@ -13667,6 +13780,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D MMMM YYYY р.',
             LLL : 'D MMMM YYYY р., HH:mm',
             LLLL : 'dddd, D MMMM YYYY р., HH:mm'
@@ -13780,6 +13894,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd، D MMMM YYYY HH:mm'
@@ -13842,6 +13957,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'D MMMM YYYY, dddd HH:mm'
@@ -13888,6 +14004,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'D MMMM YYYY, dddd HH:mm'
@@ -13947,6 +14064,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM [năm] YYYY',
             LLL : 'D MMMM [năm] YYYY HH:mm',
             LLLL : 'dddd, D MMMM [năm] YYYY HH:mm',
@@ -14002,6 +14120,7 @@
         longDateFormat : {
             LT : 'HH:mm',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY HH:mm',
             LLLL : 'dddd, D MMMM YYYY HH:mm'
@@ -14057,6 +14176,7 @@
             LT : 'h:mm A',
             LTS : 'h:mm:ss A',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY h:mm A',
             LLLL : 'dddd, D MMMM YYYY h:mm A'
@@ -14105,6 +14225,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'YYYY/MM/DD',
+            LS : 'YY/MM/DD',
             LL : 'YYYY年M月D日',
             LLL : 'YYYY年M月D日Ah点mm分',
             LLLL : 'YYYY年M月D日ddddAh点mm分',
@@ -14203,6 +14324,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'YYYY/MM/DD',
+            LS : 'YY/MM/DD',
             LL : 'YYYY年M月D日',
             LLL : 'YYYY年M月D日 HH:mm',
             LLLL : 'YYYY年M月D日dddd HH:mm',
@@ -14294,6 +14416,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'YYYY/MM/DD',
+            LS : 'YY/MM/DD',
             LL : 'YYYY年M月D日',
             LLL : 'YYYY年M月D日 HH:mm',
             LLLL : 'YYYY年M月D日dddd HH:mm',

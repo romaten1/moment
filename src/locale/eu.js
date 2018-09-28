@@ -16,6 +16,7 @@ export default moment.defineLocale('eu', {
         LT : 'HH:mm',
         LTS : 'HH:mm:ss',
         L : 'YYYY-MM-DD',
+        LS : 'YY-MM-DD',
         LL : 'YYYY[ko] MMMM[ren] D[a]',
         LLL : 'YYYY[ko] MMMM[ren] D[a] HH:mm',
         LLLL : 'dddd, YYYY[ko] MMMM[ren] D[a] HH:mm',

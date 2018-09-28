@@ -42,6 +42,7 @@ export default moment.defineLocale('mn', {
         LT : 'HH:mm',
         LTS : 'HH:mm:ss',
         L : 'YYYY-MM-DD',
+        LS : 'YY-MM-DD',
         LL : 'YYYY оны MMMMын D',
         LLL : 'YYYY оны MMMMын D HH:mm',
         LLLL : 'dddd, YYYY оны MMMMын D HH:mm'

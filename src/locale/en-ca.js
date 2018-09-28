@@ -14,6 +14,7 @@ export default moment.defineLocale('en-ca', {
         LT : 'h:mm A',
         LTS : 'h:mm:ss A',
         L : 'YYYY-MM-DD',
+        LS : 'YY-MM-DD',
         LL : 'MMMM D, YYYY',
         LLL : 'MMMM D, YYYY h:mm A',
         LLLL : 'dddd, MMMM D, YYYY h:mm A'

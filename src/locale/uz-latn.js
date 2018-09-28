@@ -14,6 +14,7 @@ export default moment.defineLocale('uz-latn', {
         LT : 'HH:mm',
         LTS : 'HH:mm:ss',
         L : 'DD/MM/YYYY',
+        LS : 'DD/MM/YY',
         LL : 'D MMMM YYYY',
         LLL : 'D MMMM YYYY HH:mm',
         LLLL : 'D MMMM YYYY, dddd HH:mm'

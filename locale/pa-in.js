@@ -44,6 +44,7 @@
             LT : 'A h:mm ਵਜੇ',
             LTS : 'A h:mm:ss ਵਜੇ',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY, A h:mm ਵਜੇ',
             LLLL : 'dddd, D MMMM YYYY, A h:mm ਵਜੇ'

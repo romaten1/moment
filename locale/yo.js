@@ -18,6 +18,7 @@
             LT : 'h:mm A',
             LTS : 'h:mm:ss A',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY h:mm A',
             LLLL : 'dddd, D MMMM YYYY h:mm A'

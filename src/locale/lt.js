@@ -66,6 +66,7 @@ export default moment.defineLocale('lt', {
         LT : 'HH:mm',
         LTS : 'HH:mm:ss',
         L : 'YYYY-MM-DD',
+        LS : 'YY-MM-DD',
         LL : 'YYYY [m.] MMMM D [d.]',
         LLL : 'YYYY [m.] MMMM D [d.], HH:mm [val.]',
         LLLL : 'YYYY [m.] MMMM D [d.], dddd, HH:mm [val.]',

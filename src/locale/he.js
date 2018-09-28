@@ -16,6 +16,7 @@ export default moment.defineLocale('he', {
         LT : 'HH:mm',
         LTS : 'HH:mm:ss',
         L : 'DD/MM/YYYY',
+        LS : 'DD/MM/YY',
         LL : 'D [ב]MMMM YYYY',
         LLL : 'D [ב]MMMM YYYY HH:mm',
         LLLL : 'dddd, D [ב]MMMM YYYY HH:mm',

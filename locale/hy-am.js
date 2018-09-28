@@ -21,6 +21,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D MMMM YYYY թ.',
             LLL : 'D MMMM YYYY թ., HH:mm',
             LLLL : 'dddd, D MMMM YYYY թ., HH:mm'

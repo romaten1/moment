@@ -69,6 +69,7 @@
             LT : 'H:mm',
             LTS : 'H:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D MMMM YYYY г.',
             LLL : 'D MMMM YYYY г., H:mm',
             LLLL : 'dddd, D MMMM YYYY г., H:mm'

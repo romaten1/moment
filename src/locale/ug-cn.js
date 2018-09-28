@@ -20,6 +20,7 @@ export default moment.defineLocale('ug-cn', {
         LT: 'HH:mm',
         LTS: 'HH:mm:ss',
         L: 'YYYY-MM-DD',
+        LS: 'YY-MM-DD',
         LL: 'YYYY-يىلىM-ئاينىڭD-كۈنى',
         LLL: 'YYYY-يىلىM-ئاينىڭD-كۈنى، HH:mm',
         LLLL: 'dddd، YYYY-يىلىM-ئاينىڭD-كۈنى، HH:mm'

@@ -24,6 +24,7 @@
             LT : 'H:mm',
             LTS : 'H:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM [de] YYYY',
             ll : 'D MMM YYYY',
             LLL : 'D MMMM [de] YYYY [a les] H:mm',

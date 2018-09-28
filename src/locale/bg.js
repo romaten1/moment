@@ -14,6 +14,7 @@ export default moment.defineLocale('bg', {
         LT : 'H:mm',
         LTS : 'H:mm:ss',
         L : 'D.MM.YYYY',
+        LS : 'D.MM.YY',
         LL : 'D MMMM YYYY',
         LLL : 'D MMMM YYYY H:mm',
         LLLL : 'dddd, D MMMM YYYY H:mm'

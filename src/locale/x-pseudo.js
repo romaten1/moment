@@ -15,6 +15,7 @@ export default moment.defineLocale('x-pseudo', {
     longDateFormat : {
         LT : 'HH:mm',
         L : 'DD/MM/YYYY',
+        LS : 'DD/MM/YY',
         LL : 'D MMMM YYYY',
         LLL : 'D MMMM YYYY HH:mm',
         LLLL : 'dddd, D MMMM YYYY HH:mm'

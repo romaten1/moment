@@ -20,6 +20,7 @@
             LT : 'HH.mm',
             LTS : 'HH.mm.ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D. MMMM [dallas] YYYY',
             LLL : 'D. MMMM [dallas] YYYY HH.mm',
             LLLL : 'dddd, [li] D. MMMM [dallas] YYYY HH.mm'

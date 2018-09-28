@@ -18,6 +18,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'MMMM D. [b.] YYYY',
             LLL : 'MMMM D. [b.] YYYY [ti.] HH:mm',
             LLLL : 'dddd, MMMM D. [b.] YYYY [ti.] HH:mm'

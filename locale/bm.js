@@ -18,6 +18,7 @@
             LT : 'HH:mm',
             LTS : 'HH:mm:ss',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'MMMM [tile] D [san] YYYY',
             LLL : 'MMMM [tile] D [san] YYYY [lɛrɛ] HH:mm',
             LLLL : 'dddd MMMM [tile] D [san] YYYY [lɛrɛ] HH:mm'

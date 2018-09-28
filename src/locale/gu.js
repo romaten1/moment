@@ -40,6 +40,7 @@ export default moment.defineLocale('gu', {
         LT: 'A h:mm વાગ્યે',
         LTS: 'A h:mm:ss વાગ્યે',
         L: 'DD/MM/YYYY',
+        LS: 'DD/MM/YY',
         LL: 'D MMMM YYYY',
         LLL: 'D MMMM YYYY, A h:mm વાગ્યે',
         LLLL: 'dddd, D MMMM YYYY, A h:mm વાગ્યે'

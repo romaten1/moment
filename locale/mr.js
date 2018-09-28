@@ -82,6 +82,7 @@
             LT : 'A h:mm वाजता',
             LTS : 'A h:mm:ss वाजता',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY, A h:mm वाजता',
             LLLL : 'dddd, D MMMM YYYY, A h:mm वाजता'

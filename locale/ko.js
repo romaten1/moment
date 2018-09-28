@@ -18,6 +18,7 @@
             LT : 'A h:mm',
             LTS : 'A h:mm:ss',
             L : 'YYYY.MM.DD.',
+            LS : 'YY.MM.DD.',
             LL : 'YYYY년 MMMM D일',
             LLL : 'YYYY년 MMMM D일 A h:mm',
             LLLL : 'YYYY년 MMMM D일 dddd A h:mm',

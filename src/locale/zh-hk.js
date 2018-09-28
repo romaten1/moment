@@ -16,6 +16,7 @@ export default moment.defineLocale('zh-hk', {
         LT : 'HH:mm',
         LTS : 'HH:mm:ss',
         L : 'YYYY/MM/DD',
+        LS : 'YY/MM/DD',
         LL : 'YYYY年M月D日',
         LLL : 'YYYY年M月D日 HH:mm',
         LLLL : 'YYYY年M月D日dddd HH:mm',

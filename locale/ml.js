@@ -19,6 +19,7 @@
             LT : 'A h:mm -നു',
             LTS : 'A h:mm:ss -നു',
             L : 'DD/MM/YYYY',
+            LS : 'DD/MM/YY',
             LL : 'D MMMM YYYY',
             LLL : 'D MMMM YYYY, A h:mm -നു',
             LLLL : 'dddd, D MMMM YYYY, A h:mm -നു'

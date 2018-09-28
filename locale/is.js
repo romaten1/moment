@@ -90,6 +90,7 @@
             LT : 'H:mm',
             LTS : 'H:mm:ss',
             L : 'DD.MM.YYYY',
+            LS : 'DD.MM.YY',
             LL : 'D. MMMM YYYY',
             LLL : 'D. MMMM YYYY [kl.] H:mm',
             LLLL : 'dddd, D. MMMM YYYY [kl.] H:mm'
